@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+#tasklist::-webkit-scrollbar{
+    display: none;
+}
+
+#hand {
+    display: inline-block;
+    /* background-color: blue; */
+    transform-origin: 80% 70%; /* Set the origin point for a more natural wave */
+    animation: hand_wave 3s ease-in-out infinite; /* Adjusted duration for a quicker wave */
+}
+
+@keyframes hand_wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(20deg);
+    }
+    80% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
